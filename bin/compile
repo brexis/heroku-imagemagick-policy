@@ -2,8 +2,8 @@
 BUILD_DIR=$1
 
 echo "-----> Replacing ImageMagick policy.xml"
-POLICY_FILE = "$BUILD_DIR/.ImageMagick/policy.xml"
+POLICY_FILE="$BUILD_DIR/.ImageMagick/policy.xml"
 
 if [ -f $POLICY_FILE ]; then
-  cp -f $POLICY_FILE /etc/ImageMagick-6/policy.xml
+  cp -f $POLICY_FILE $BUILD_DIR/etc/ImageMagick-6/policy.xml
 fi
